@@ -25,7 +25,7 @@ const Header = () => {
                         <HiArrowsUpDown size={35} className='text-white' />
                     </div>
                 </div>
-                <DateTime title='Pick - Up' locationContent='Semarang' dateContent='21 July 2023' timeContent='01.00' />
+                <DateTime title='Drop - Off' locationContent='Semarang' dateContent='21 July 2023' timeContent='01.00' />
             </div>
         </header>
     )
