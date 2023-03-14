@@ -4,16 +4,17 @@ import { FcLike } from 'react-icons/fc'
 import { FaGasPump } from 'react-icons/fa';
 import { IoCogSharp } from 'react-icons/io5';
 import { MdPeopleAlt } from 'react-icons/md';
-import Button from './Button';
-import { dataRecomendation } from './../pages/api/data';
+import { dataRecomendation } from '@/pages/api/data';
 import { useRouter } from 'next/router';
 
-const CardRecomendation = () => {
+const DetailCari = ({ params }: { params: { slug: string } }) => {
     const router = useRouter();
+    const { id: any } = router.query;
+    const data = dataRecomendation;
     return (
         <>
-            {dataRecomendation.map((item) => (
-                <div key={item.id} className='bg-white rounded-md shadow-md p-5'>
+            {data.map((item: any, index: number) => (
+                <div key={index} className='bg-white rounded-md shadow-md p-5'>
                     <div className='flex justify-between items-center'>
                         <h4 className='text-secondary-500 text-lg font-semibold'>{item.title}</h4>
                         <FcLike size={30} />
@@ -38,12 +39,10 @@ const CardRecomendation = () => {
                     </div>
                     <div className='flex items-center justify-between mt-3'>
                         <h4 className='text-secondary-500 tracking-wide'>${item.price}/<span className="text-[12px] text-secondary-300">day</span></h4>
-                        <Button onClick={() => router.push(`detail/${item.id}`)} text='Rental Now' className='py-2 px-4' />
                     </div>
                 </div>
             ))}
         </>
     )
 }
-
-export default CardRecomendation
+export default DetailCari

@@ -19,7 +19,7 @@ interface Props {
 
 const CardPopulerCar = (props: Props) => {
     return (
-        <div className={`bg-white rounded-md shadow-md w-[240px] p-5 ${props.className}`}>
+        <div className={`bg-white rounded-md shadow-md w-[240px] h-[280px] mb-10 p-5 ${props.className}`}>
             <div className='flex items-center justify-between'>
                 <h4 className='font-semibold text-lg text-secondary-500'>{props.title}</h4>
                 <FcLike size={30} />
@@ -44,7 +44,7 @@ const CardPopulerCar = (props: Props) => {
             </div>
             <div className='flex justify-between mt-7 items-center'>
                 <h4 className='text-secondary-500 text-lg tracking-wide'>${props.price}/<span className="text-[12px] text-secondary-300">day</span></h4>
-                <Button text='Rental Now' className=' py-2 px-4' />
+                <Button onClick={() => { }} text='Rental Now' className=' py-2 px-4' />
             </div>
         </div>
     )

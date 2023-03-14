@@ -102,4 +102,14 @@ export const dataPopuler = [
         seat: 4,
         price: "96.00"
     },
+{
+    id: 9,
+    title: 'New MG ZS',
+    img: '/assets/car-sh/newMGZS-sh.png',
+    type: 'SUV',
+    gear:'Manual',
+    tank: 80,
+    seat: 6,
+    price: "80.00"
+}
 ]
