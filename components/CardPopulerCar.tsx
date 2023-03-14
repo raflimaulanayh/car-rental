@@ -5,6 +5,7 @@ import { IoCogSharp } from "react-icons/io5"
 import { MdPeopleAlt } from "react-icons/md"
 import Image from 'next/image'
 import Button from './Button'
+import { useRouter } from 'next/router';
 
 interface Props {
     className?: string;
@@ -15,9 +16,11 @@ interface Props {
     gear: string;
     seat: any;
     price: string;
+    button: string;
 }
 
 const CardPopulerCar = (props: Props) => {
+    const router = useRouter();
     return (
         <div className={`bg-white rounded-md shadow-md w-[240px] h-[280px] mb-10 p-5 ${props.className}`}>
             <div className='flex items-center justify-between'>
@@ -44,7 +47,7 @@ const CardPopulerCar = (props: Props) => {
             </div>
             <div className='flex justify-between mt-7 items-center'>
                 <h4 className='text-secondary-500 text-lg tracking-wide'>${props.price}/<span className="text-[12px] text-secondary-300">day</span></h4>
-                <Button onClick={() => { }} text='Rental Now' className=' py-2 px-4' />
+                <Button onClick={() => router.push(props.button)} text='Rental Now' className=' py-2 px-4' />
             </div>
         </div>
     )

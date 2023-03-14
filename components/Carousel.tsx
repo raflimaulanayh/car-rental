@@ -25,7 +25,7 @@ function Carousel() {
         >
             {dataPopuler.map((item) => (
                 <SplideSlide key={item.id}>
-                    <CardPopulerCar title={item.title} type={item.type} img={item.img} tank={item.tank} gear={item.gear} seat={item.seat} price={item.price} />
+                    <CardPopulerCar title={item.title} button={`/detail/${item.id}`} type={item.type} img={item.img} tank={item.tank} gear={item.gear} seat={item.seat} price={item.price} />
                 </SplideSlide>
             ))}
         </Splide>
