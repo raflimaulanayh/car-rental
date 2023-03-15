@@ -4,10 +4,11 @@ import { RiVisaLine } from 'react-icons/ri'
 import Footer from './../section/Footer';
 import Link from 'next/link';
 import Button from './../../components/Button';
+import Layout from './../../components/layout/index';
 
 const PaymentCarRental = () => {
     return (
-        <>
+        <Layout pageTitle='Payment Car'>
             <section className='bg-[#F6F7F9] h-full'>
                 <nav className='flex bg-white justify-between items-center py-7 px-5'>
                     <div className='text-primary-500 uppercase font-semibold text-2xl'>
@@ -189,7 +190,7 @@ const PaymentCarRental = () => {
                 </div>
                 <Footer />
             </section>
-        </>
+        </Layout>
     )
 }
 
