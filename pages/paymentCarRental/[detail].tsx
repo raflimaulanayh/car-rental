@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import { RiVisaLine } from 'react-icons/ri'
 import Footer from './../section/Footer';
+import Link from 'next/link';
+import Button from './../../components/Button';
 
 const PaymentCarRental = () => {
     return (
@@ -161,6 +163,28 @@ const PaymentCarRental = () => {
                                 </div>
                             </div>
                         </form>
+                    </div>
+                    <div className='bg-white h-full mt-7 rounded-md px-5 py-6'>
+                        <div className='flex justify-between'>
+                            <div className='w-8/12'>
+                                <h4 className='text-lg text-secondary-500 font-bold -tracking-wide'>Confirmation</h4>
+                                <p className='text-[12px] text-secondary-300 font-medium'>We are getting to the end. Just few
+                                    clicks and your rental is ready!</p>
+                            </div>
+                            <p className='text-[12px] text-secondary-300 font-medium'>Step 4 of 4</p>
+                        </div>
+                        <div className='flex items-center space-x-3 bg-[#F6F7F9] rounded-md p-4 mt-4'>
+                            <input type="checkbox" />
+                            <p className='text-[12px] text-secondary-500 font-medium'>I agree with sending an Marketing and newsletter emails. No spam, promissed!</p>
+                        </div>
+                        <div className='flex items-center space-x-3 bg-[#F6F7F9] rounded-md p-4 mt-4'>
+                            <input type="checkbox" />
+                            <p className='text-[12px] text-secondary-500 font-medium'>I agree with our <Link href="/" className='underline'>terms and conditions</Link> and <Link className="underline" href='/'>privacy policy!</Link></p>
+                        </div>
+                        <Button onClick={() => { }} text='Rental Now' className='py-2 px-5 mt-6' />
+                        <Image src="/assets/logo/security.svg" alt="" height={28} width={30} className='mt-5' />
+                        <h4 className='text-secondary-500 font-bold mt-3'>All your data are safe</h4>
+                        <p className='text-[12px] text-secondary-300'>We are using the most advanced security to provide you the best experience ever.</p>
                     </div>
                 </div>
                 <Footer />

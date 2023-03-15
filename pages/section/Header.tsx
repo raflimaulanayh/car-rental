@@ -16,7 +16,7 @@ const Header = () => {
                     <Image src={`/assets/bg-silinder.png`} alt='img-silinder' width={400} height={400} className='absolute -z-10' />
                     <h4 className='px-5 pt-5 font-semibold text-white'>The Best Platform for Car Rental</h4>
                     <p className='pl-5 w-10/12 font-medium text-sm text-white pt-3 pb-4'>Ease of doing a car rental safely and reliably. Of course at a low price.</p>
-                    <Button onClick={() => router.push('/section/PaymentCarRental')} text="Rental Car" className='z-30 mx-5  py-2 px-5' />
+                    <Button onClick={() => router.push('/paymentCarRental/1')} text="Rental Car" className='z-30 mx-5  py-2 px-5' />
                     <div className='flex justify-center pt-3'>
                         <Image src={`/assets/car/koenigsegg-car.png`} alt='koenigsegg-car' width={196} height={56} />
                     </div>

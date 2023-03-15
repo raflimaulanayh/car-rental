@@ -38,7 +38,7 @@ const CardRecomendation = () => {
                     </div>
                     <div className='flex items-center justify-between mt-3'>
                         <h4 className='text-secondary-500 tracking-wide'>${item.price}/<span className="text-[12px] text-secondary-300">day</span></h4>
-                        <Button onClick={() => router.push(`detail/${item.id}`)} text='Rental Now' className='py-2 px-4' />
+                        <Button onClick={() => router.push(`detailCar/${item.id}`)} text='Rental Now' className='py-2 px-4' />
                     </div>
                 </div>
             ))}

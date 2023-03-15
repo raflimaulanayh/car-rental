@@ -12,7 +12,7 @@ import '@splidejs/react-splide/css';
 // // or only core styles
 // import '@splidejs/react-splide/css/core';
 
-function Carousel() {
+function CarouselPopulerCar() {
 
     return (
         <Splide
@@ -54,7 +54,7 @@ function Carousel() {
             {dataPopuler.map((item) => (
                 <SplideSlide key={item.id}>
                     <div className="mx-auto">
-                        <CardPopulerCar title={item.title} button={`/detail/${item.id}`} type={item.type} img={item.img} tank={item.tank} gear={item.gear} seat={item.seat} price={item.price} />
+                        <CardPopulerCar title={item.title} button={`/detailCar/${item.id}`} type={item.type} img={item.img} tank={item.tank} gear={item.gear} seat={item.seat} price={item.price} />
                     </div>
                 </SplideSlide>
             ))}
@@ -62,4 +62,4 @@ function Carousel() {
     );
 }
 
-export default Carousel;
+export default CarouselPopulerCar;

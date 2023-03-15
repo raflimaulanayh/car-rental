@@ -66,7 +66,7 @@ module.exports = {
           },
       extend: {
         fontFamily: {
-          jakarta: ["Poppins", "sans-serif", "Arial"],
+          jakarta: ["Plus Jakarta Sans", "sans-serif", "Arial"],
         },
       },
     },

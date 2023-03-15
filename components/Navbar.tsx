@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className='flex gap-5 px-5'>
                 <form className='flex items-center bg-transparent border border-secondary-300 rounded-lg h-[48px] w-10/12'>
                     <RiSearch2Line size={30} className='text-secondary-400 ml-5 mr-3' />
-                    <input placeholder='Search something here' type="text" className='outline-none bg-transparent mr-5' />
+                    <input placeholder='Search something here' type="text" className='outline-none bg-transparent' />
                 </form>
                 <div onClick={() => setSidebar(true)} className='flex justify-center items-center bg-transparent border border-secondary-300 rounded-lg h-[48px] w-2/12'>
                     <VscSettings size={30} className='text-secondary-400' />
