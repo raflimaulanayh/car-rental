@@ -22,7 +22,7 @@ interface Props {
 const CardPopulerCar = (props: Props) => {
     const router = useRouter();
     return (
-        <div className={`bg-white rounded-md shadow-md w-[240px] h-[280px] mb-10 p-5 ${props.className}`}>
+        <div className={`bg-white rounded-md shadow-md w-full mx-3 h-[280px] mb-10 p-5 ${props.className}`}>
             <div className='flex items-center justify-between'>
                 <h4 className='font-semibold text-lg text-secondary-500'>{props.title}</h4>
                 <FcLike size={30} />

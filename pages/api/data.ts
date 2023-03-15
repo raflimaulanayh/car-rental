@@ -73,6 +73,16 @@ export const dataPopuler = [
         price: '99.00'
     },
     {
+        id: 4,
+        title: 'All New Terios',
+        img: '/assets/car-sh/allNewTerios-sh.png',
+        type: 'SUV',
+        gear: 'Manual',
+        tank: 90,
+        seat: 6,
+        price: "74.00"
+    },
+    {
         id: 10,
         title: 'Nissan GT-R',
         img: '/assets/car-sh/nissanGTR-sh.png',
@@ -103,7 +113,7 @@ export const dataPopuler = [
         price: "96.00"
     },
 {
-    id: 9,
+    id: 11,
     title: 'New MG ZS',
     img: '/assets/car-sh/newMGZS-sh.png',
     type: 'SUV',
@@ -111,5 +121,15 @@ export const dataPopuler = [
     tank: 80,
     seat: 6,
     price: "80.00"
-}
+},
+{
+    id: 3,
+    title: 'CR-V',
+    img: '/assets/car-sh/crv-sh.png',
+    type: 'SUV',
+    gear:'Manual',
+    tank: 70,
+    seat: 6,
+    price: "80.00"
+},
 ]

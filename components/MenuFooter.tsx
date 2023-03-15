@@ -7,7 +7,7 @@ interface Props {
 }
 
 const MenuFooter = (props: Props) => {
-    return <Link className='text-secondary-300 font-medium text-[16px] ' href={props.href}>{props.itemMenu}</Link>
+    return <Link className='text-secondary-300 font-medium text-[16px]' href={props.href}>{props.itemMenu}</Link>
 }
 
 export default MenuFooter

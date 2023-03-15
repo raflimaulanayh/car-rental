@@ -17,15 +17,45 @@ function Carousel() {
     return (
         <Splide
             options={{
-                padding: '4rem',
-                gap: '1rem',
+                padding: '50px',
                 rewind: true,
+                gap: '1rem',
                 start: 2,
+                perPage: 2,
+                mediaQuery: 'max',
+                breakpoints: {
+                    600: {
+                        perPage: 1,
+                        padding: '60px',
+                    },
+                    800: {
+                        perPage: 2,
+                        padding: '55px',
+                    },
+                    1000: {
+                        perPage: 3,
+                        padding: '50px',
+                    },
+                    1200: {
+                        perPage: 3,
+                        padding: '55px',
+                    },
+                    1600: {
+                        perPage: 4,
+                        padding: '60px',
+                    },
+                    2000: {
+                        perPage: 5,
+                        padding: '60px',
+                    }
+                }
             }}
         >
             {dataPopuler.map((item) => (
                 <SplideSlide key={item.id}>
-                    <CardPopulerCar title={item.title} button={`/detail/${item.id}`} type={item.type} img={item.img} tank={item.tank} gear={item.gear} seat={item.seat} price={item.price} />
+                    <div className="mx-auto">
+                        <CardPopulerCar title={item.title} button={`/detail/${item.id}`} type={item.type} img={item.img} tank={item.tank} gear={item.gear} seat={item.seat} price={item.price} />
+                    </div>
                 </SplideSlide>
             ))}
         </Splide>

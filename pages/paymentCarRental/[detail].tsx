@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
+import { RiVisaLine } from 'react-icons/ri'
+import Footer from './../section/Footer';
 
 const PaymentCarRental = () => {
     return (
@@ -13,7 +15,7 @@ const PaymentCarRental = () => {
                         <Image src={`/assets/foto-profil.png`} alt='Foto Profil' width={30} height={30} />
                     </div>
                 </nav>
-                <div className='px-5 py-7'>
+                <div className='px-5 py-7 mb-7'>
                     <div className='bg-white h-full rounded-md px-5 py-6'>
                         <h4 className='font-bold text-secondary-500 text-lg'>Rental Summary</h4>
                         <p className='font-medium text-secondary-300 text-[12px]'>Prices may change depending on the length of the rental and the price of your rental car.</p>
@@ -39,7 +41,7 @@ const PaymentCarRental = () => {
                                 <p className='text-lg font-semibold text-secondary-500'>$0</p>
                             </div>
                         </div>
-                        <form className='bg-[#F6F7F9] flex items-center px-4 py-2 rounded-md justify-between mt-6'>
+                        <form className='bg-[#F6F7F9] flex items-center px-6 py-3 rounded-md justify-between mt-6'>
                             <input placeholder='Apply promo code' type='text' className='bg-transparent outline-none text-secondary-300 text-[12px] font-medium' />
                             <button className='bg-transparent outline-none text-secondary-500 text-[12px] font-semibold '>Apply Now</button>
                         </form>
@@ -101,7 +103,67 @@ const PaymentCarRental = () => {
                             </div>
                         </form>
                     </div>
+                    <div className='bg-white h-full mt-7 rounded-md px-5 py-6'>
+                        <div className='flex justify-between'>
+                            <div className=''>
+                                <h4 className='text-lg text-secondary-500 font-bold -tracking-wide'>Payment Method</h4>
+                                <p className='text-[12px] text-secondary-300 font-medium'>Please enter your payment method</p>
+                            </div>
+                            <p className='text-[12px] text-secondary-300 font-medium'>Step 3 of 4</p>
+                        </div>
+                        <form>
+                            <div className='bg-[#F6F7F9] rounded-md p-4 mt-4'>
+                                <div className='flex items-center'>
+                                    <div className='flex items-center space-x-2 justify-start w-7/12'>
+                                        <input type="radio" name="CreditCard" className='w-3 h-3 focus:ring-4 focus:ring-primary-300 rounded-full' />
+                                        <p className='font-semibold text-base text-secondary-500'>Credit Card</p>
+                                    </div>
+                                    <div className='flex items-center space-x-2 justify-end w-5/12'>
+                                        <RiVisaLine size={48} className='text-[#00579F]' />
+                                        <Image src="/assets/logo/bank-bulat.svg" alt="Bank Bulat" width={32} height={20} />
+                                    </div>
+                                </div>
+                                <div className='flex flex-col mt-2'>
+                                    <label htmlFor="CardNumber" className='text-sm text-secondary-500 font-semibold'>Card Number</label>
+                                    <input type="text" placeholder='Card number' className='text-[12px] rounded-md font-semibold text-secondary-300 outline-none px-6 py-3 mt-3' />
+                                </div>
+                                <div className='flex flex-col mt-6'>
+                                    <label htmlFor="CardHolder" className='text-sm text-secondary-500 font-semibold'>Card Holder</label>
+                                    <input type="text" placeholder='Card holder' className='text-[12px] rounded-md font-semibold text-secondary-300 outline-none px-6 py-3 mt-3' />
+                                </div>
+                                <div className='flex flex-col mt-6'>
+                                    <label htmlFor="Date" className='text-sm text-secondary-500 font-semibold'>Expration Date</label>
+                                    <input type="date" className='text-[12px] uppercase rounded-md font-semibold text-secondary-300 outline-none px-6 py-3 mt-3' />
+                                </div>
+                                <div className='flex flex-col mt-6'>
+                                    <label htmlFor="CVC" className='text-sm text-secondary-500 font-semibold tracking-wider'>CVC</label>
+                                    <input type="text" placeholder='CVC' className='text-[12px] rounded-md font-semibold text-secondary-300 outline-none px-6 py-3 mt-3' />
+                                </div>
+                            </div>
+                        </form>
+                        <form>
+                            <div className='flex items-center bg-[#F6F7F9] rounded-md p-4 mt-4'>
+                                <div className='flex items-center space-x-2 justify-start w-7/12'>
+                                    <input type="radio" name="CreditCard" className='w-3 h-3 focus:ring-4 focus:ring-primary-300 rounded-full' />
+                                    <p className='font-semibold text-base text-secondary-500'>PayPal</p>
+                                </div>
+                                <div className='flex items-center space-x-2 justify-end w-5/12'>
+                                    <Image src="/assets/logo/PayPal.svg" alt="Bank Bulat" width={96} height={20} />
+                                </div>
+                            </div>
+                            <div className='flex items-center bg-[#F6F7F9] rounded-md p-4 mt-4'>
+                                <div className='flex items-center space-x-2 justify-start w-7/12'>
+                                    <input type="radio" name="CreditCard" className='w-3 h-3 focus:ring-4 focus:ring-primary-300 rounded-full' />
+                                    <p className='font-semibold text-base text-secondary-500'>Bitcoin</p>
+                                </div>
+                                <div className='flex items-center space-x-2 justify-end w-5/12'>
+                                    <Image src="/assets/logo/Bitcoin.svg" alt="Bank Bulat" width={96} height={20} />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
+                <Footer />
             </section>
         </>
     )

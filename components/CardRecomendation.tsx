@@ -20,7 +20,7 @@ const CardRecomendation = () => {
                     </div>
                     <p className='text-secondary-300 font-medium text-[12px]'>{item.type}</p>
                     <div className='flex justify-between items-center'>
-                        <Image src={item.img} width={221} alt='gaj' height={70} className='mt-7 mb-9' />
+                        <Image src={item.img} width={221} alt={item.title} height={70} className='mt-7 mb-9' />
                         <div className='flex flex-col space-y-4 text-secondary-300 text-[12px] font-medium '>
                             <span className='flex items-center'>
                                 <FaGasPump size={15} className='mr-1' />
